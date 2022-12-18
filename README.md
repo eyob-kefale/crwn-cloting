@@ -1,2 +1,0 @@
-# crwn-cloting
-MERN PROJECTS
