@@ -23,7 +23,7 @@ const checkOutHandler=()=>{
                     <CartItem key={item.id} cartItem={item} />
                 ))}
             </div>
-            <Button onClick={checkOutHandler}>GO TO CHECKOUT</Button>
+            <Button onClick={checkOutHandler}>go to checkout</Button>
         </div>
     )
 }

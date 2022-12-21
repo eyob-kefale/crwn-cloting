@@ -6,11 +6,11 @@ import Button from '../button/button.component'
 import { CartContext } from '../../context/cart.context'
 
 export const ProductCard = ({ product }) => {
-    const { name, price, imageUrl } = product;
+    const { name, price, imageUrl,title } = product;
     const { addItemToCart } = useContext(CartContext);
 
     const addProductToCart = () => addItemToCart(product);
-
+    
     return (
         <div className='product-card-container'>
             <img src={imageUrl} alt={`${name}`} />
@@ -18,7 +18,7 @@ export const ProductCard = ({ product }) => {
                 <span className='name'>{name}</span>
                 <span className='price'>{price}</span>
             </div>
-            <Button  buttonType='inverted' onClick={addProductToCart}>
+            <Button buttonType='inverted' onClick={addProductToCart}>
                 Add to cart
             </Button>
         </div>
